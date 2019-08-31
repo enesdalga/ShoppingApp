@@ -3,9 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6628F559-CEDE-4B93-8966-CF377DC49290}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\docker-compose.yml = Solution Items\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{382A385B-2763-4396-BCC2-9EFE11208B8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3D656F45-3544-4311-99F2-D8710C13C1C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Card", "Card", "{E2994761-3960-4792-A075-30B125D7775B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card.Domain", "Source\Services\Card\Card.Domain\Card.Domain.csproj", "{BB1547C2-0C11-4D8F-893B-13D34504DDEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card.API", "Source\Services\Card\Card.API\Card.API.csproj", "{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB1547C2-0C11-4D8F-893B-13D34504DDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1547C2-0C11-4D8F-893B-13D34504DDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1547C2-0C11-4D8F-893B-13D34504DDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1547C2-0C11-4D8F-893B-13D34504DDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D656F45-3544-4311-99F2-D8710C13C1C2} = {382A385B-2763-4396-BCC2-9EFE11208B8D}
+		{E2994761-3960-4792-A075-30B125D7775B} = {3D656F45-3544-4311-99F2-D8710C13C1C2}
+		{BB1547C2-0C11-4D8F-893B-13D34504DDEE} = {E2994761-3960-4792-A075-30B125D7775B}
+		{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA} = {E2994761-3960-4792-A075-30B125D7775B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B8387203-B14B-4284-8EB8-70FAF514CE5B}
