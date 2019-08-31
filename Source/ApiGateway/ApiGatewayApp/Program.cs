@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Card.API
+namespace ApiGatewayApp
 {
     public class Program
     {
@@ -19,7 +19,10 @@ namespace Card.API
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://localhost:5001/")
+                .ConfigureAppConfiguration((host,config)=> {
+                    config.AddJsonFile("ocelot.json");
+                })
+                .UseUrls("http://localhost:5000/")
                 .UseStartup<Startup>();
     }
 }

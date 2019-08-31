@@ -14,11 +14,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Card", "Card", "{E2994761-3960-4792-A075-30B125D7775B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card.Domain", "Source\Services\Card\Card.Domain\Card.Domain.csproj", "{BB1547C2-0C11-4D8F-893B-13D34504DDEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Card.Domain", "Source\Services\Card\Card.Domain\Card.Domain.csproj", "{BB1547C2-0C11-4D8F-893B-13D34504DDEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card.API", "Source\Services\Card\Card.API\Card.API.csproj", "{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Card.API", "Source\Services\Card\Card.API\Card.API.csproj", "{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card.Infrastructure", "Source\Services\Card\Card.Infrastructure\Card.Infrastructure.csproj", "{A5178910-BF7F-4EDA-9E0B-2A4C449BA133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Card.Infrastructure", "Source\Services\Card\Card.Infrastructure\Card.Infrastructure.csproj", "{A5178910-BF7F-4EDA-9E0B-2A4C449BA133}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{E2A403C7-C939-4F05-814B-D8DC42CC5AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGatewayApp", "Source\ApiGateway\ApiGatewayApp\ApiGatewayApp.csproj", "{48F25BF6-6775-4420-BD4E-ED20E017C178}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,10 @@ Global
 		{A5178910-BF7F-4EDA-9E0B-2A4C449BA133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5178910-BF7F-4EDA-9E0B-2A4C449BA133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5178910-BF7F-4EDA-9E0B-2A4C449BA133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48F25BF6-6775-4420-BD4E-ED20E017C178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F25BF6-6775-4420-BD4E-ED20E017C178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F25BF6-6775-4420-BD4E-ED20E017C178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F25BF6-6775-4420-BD4E-ED20E017C178}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,8 @@ Global
 		{BB1547C2-0C11-4D8F-893B-13D34504DDEE} = {E2994761-3960-4792-A075-30B125D7775B}
 		{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA} = {E2994761-3960-4792-A075-30B125D7775B}
 		{A5178910-BF7F-4EDA-9E0B-2A4C449BA133} = {E2994761-3960-4792-A075-30B125D7775B}
+		{E2A403C7-C939-4F05-814B-D8DC42CC5AFB} = {382A385B-2763-4396-BCC2-9EFE11208B8D}
+		{48F25BF6-6775-4420-BD4E-ED20E017C178} = {E2A403C7-C939-4F05-814B-D8DC42CC5AFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B8387203-B14B-4284-8EB8-70FAF514CE5B}
