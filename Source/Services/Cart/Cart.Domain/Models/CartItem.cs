@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Card.Domain.Models
+namespace Cart.Domain.Models
 {
-    public class CardItem
+    public class CartItem
     {
         public string Id { get; set; }
         public string ProductId { get; set; }

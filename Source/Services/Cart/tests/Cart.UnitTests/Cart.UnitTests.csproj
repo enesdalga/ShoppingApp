@@ -17,9 +17,4 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Card.API\Card.API.csproj" />
-    <ProjectReference Include="..\..\Card.Domain\Card.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

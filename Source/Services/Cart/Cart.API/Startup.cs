@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Card.Infrastructure.Repositories;
+using Cart.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +30,7 @@ namespace Card.API
 
             services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(Configuration["RedisCache:ConnectionString"]));
 
-            services.AddTransient<ICardRepository, CardRepository>();
+            services.AddTransient<ICartRepository, CartRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

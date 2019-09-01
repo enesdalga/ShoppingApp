@@ -1,7 +1,7 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/api/card",
+      "DownstreamPathTemplate": "/api/cart",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,11 +9,11 @@
           "Port": "5001"
         }
       ],
-      "UpstreamPathTemplate": "/card-service/card",
+      "UpstreamPathTemplate": "/cart-service/cart",
       "UpstreamHttpMethod": [ "Post" ]
     },
     {
-      "DownstreamPathTemplate": "/api/card/{everything}",
+      "DownstreamPathTemplate": "/api/cart/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -21,7 +21,7 @@
           "Port": "5001"
         }
       ],
-      "UpstreamPathTemplate": "/card-service/card/{everything}",
+      "UpstreamPathTemplate": "/cart-service/cart/{everything}",
       "UpstreamHttpMethod": [ "Get" ]
     }
   ],

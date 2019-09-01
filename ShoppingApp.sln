@@ -12,13 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{382A38
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3D656F45-3544-4311-99F2-D8710C13C1C2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Card", "Card", "{E2994761-3960-4792-A075-30B125D7775B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cart", "Cart", "{E2994761-3960-4792-A075-30B125D7775B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Card.Domain", "Source\Services\Card\Card.Domain\Card.Domain.csproj", "{BB1547C2-0C11-4D8F-893B-13D34504DDEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Domain", "Source\Services\Cart\Cart.Domain\Cart.Domain.csproj", "{BB1547C2-0C11-4D8F-893B-13D34504DDEE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Card.API", "Source\Services\Card\Card.API\Card.API.csproj", "{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.API", "Source\Services\Cart\Cart.API\Cart.API.csproj", "{EE0CFAC5-FB70-4823-A5D7-F2CB48271AFA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Card.Infrastructure", "Source\Services\Card\Card.Infrastructure\Card.Infrastructure.csproj", "{A5178910-BF7F-4EDA-9E0B-2A4C449BA133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Infrastructure", "Source\Services\Cart\Cart.Infrastructure\Cart.Infrastructure.csproj", "{A5178910-BF7F-4EDA-9E0B-2A4C449BA133}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{E2A403C7-C939-4F05-814B-D8DC42CC5AFB}"
 EndProject
@@ -26,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGatewayApp", "Source\Api
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{323E2A55-2951-49E5-8C69-11201E14046C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card.UnitTests", "Source\Services\Card\tests\Card.UnitTests\Card.UnitTests.csproj", "{AA9F7566-E316-49CB-97E2-83573C426561}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.UnitTests", "Source\Services\Cart\tests\Cart.UnitTests\Cart.UnitTests.csproj", "{AA9F7566-E316-49CB-97E2-83573C426561}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
