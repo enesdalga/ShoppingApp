@@ -23,6 +23,11 @@ namespace Cart.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<UserCart>> Get(string id)
         {
+            if (string.IsNullOrEmpty(id))
+            {
+                return BadRequest("User Id can not be empty");
+            }
+
             var cart = await _cartRepository.GetCartAsync(id);
 
             return Ok(cart ?? new UserCart(id));
@@ -31,6 +36,15 @@ namespace Cart.API.Controllers
         [HttpPost]
         public async Task<ActionResult<UserCart>> Post([FromBody]UserCart cart)
         {
+            if (string.IsNullOrEmpty(cart.UserId))
+            {
+                return BadRequest("User Id can not be empty");
+            }
+            else if (Equals(cart.CartItems.Count,default(int)))
+            {
+                return BadRequest("Card items can not be empty");
+            }
+
             return Ok(await _cartRepository.AddUpdateCartAsync(cart));
         }
     }
