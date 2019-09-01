@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  redis-server:
+    image: redis:alpine
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: Source/ApiGateway/ApiGatewayApp/Dockerfile
+    ports:
+      - 5000:80
+
+  cart-service:
+    build:
+      context: .
+      dockerfile: Source/Services/Cart/Cart.API/Dockerfile
+    ports:
+      - 5001:80
+    depends_on:
+      - redis-server

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6628F559-CEDE-4B93-8966-CF377DC49290}"
 	ProjectSection(SolutionItems) = preProject
-		Solution Items\docker-compose.yml = Solution Items\docker-compose.yml
+		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{382A385B-2763-4396-BCC2-9EFE11208B8D}"
@@ -26,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGatewayApp", "Source\Api
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{323E2A55-2951-49E5-8C69-11201E14046C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.UnitTests", "Source\Services\Cart\tests\Cart.UnitTests\Cart.UnitTests.csproj", "{AA9F7566-E316-49CB-97E2-83573C426561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.UnitTests", "Source\Services\Cart\tests\Cart.UnitTests\Cart.UnitTests.csproj", "{AA9F7566-E316-49CB-97E2-83573C426561}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
