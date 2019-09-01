@@ -17,4 +17,10 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cart.API\Cart.API.csproj" />
+    <ProjectReference Include="..\..\Cart.Domain\Cart.Domain.csproj" />
+    <ProjectReference Include="..\..\Cart.Infrastructure\Cart.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

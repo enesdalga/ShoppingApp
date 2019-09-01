@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Card.UnitTests
+namespace Cart.UnitTests
 {
     public class AutoMoqDataAttribute : AutoDataAttribute
     {
