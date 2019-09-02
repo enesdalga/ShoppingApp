@@ -22,7 +22,6 @@ namespace ApiGatewayApp
                 .ConfigureAppConfiguration((host,config)=> {
                     config.AddJsonFile("ocelot.json");
                 })
-                .UseUrls("http://localhost:5000/")
                 .UseStartup<Startup>();
     }
 }

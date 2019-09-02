@@ -17,7 +17,7 @@ services:
     networks:
       - docker_web_network
     ports:
-      - 5000:80
+      - 5000:5000
 
   cart-service:
     container_name: "cartservice-container"
@@ -25,7 +25,7 @@ services:
       context: .
       dockerfile: Source/Services/Cart/Cart.API/Dockerfile
     ports:
-      - 5001:80
+      - 5001:5001
     networks:
       - docker_web_network
     depends_on:
