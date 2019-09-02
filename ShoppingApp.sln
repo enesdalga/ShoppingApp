@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6628F559-CEDE-4B93-8966-CF377DC49290}"
 	ProjectSection(SolutionItems) = preProject
+		application.ps1 = application.ps1
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject

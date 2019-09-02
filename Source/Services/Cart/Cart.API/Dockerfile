@@ -5,7 +5,11 @@ EXPOSE 80
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
 COPY ["Source/Services/Cart/Cart.API/Cart.API.csproj", "Source/Services/Cart/Cart.API/"]
+COPY ["Source/Services/Cart/Cart.Domain/Cart.Domain.csproj", "Source/Services/Cart/Cart.Domain/"]
+COPY ["Source/Services/Cart/Cart.Infrastructure/Cart.Infrastructure.csproj", "Source/Services/Cart/Cart.Infrastructure/"]
+
 RUN dotnet restore "Source/Services/Cart/Cart.API/Cart.API.csproj"
+
 COPY . .
 WORKDIR "/src/Source/Services/Cart/Cart.API"
 RUN dotnet build "Cart.API.csproj" -c Release -o /app

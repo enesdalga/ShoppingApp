@@ -2,20 +2,34 @@ version: '3'
 
 services:
   redis-server:
-    image: redis:alpine
+    container_name: "redis-container"
+    image: redis
+    ports:
+      - 6379:6379
+    networks:
+      - docker_web_network
 
   api-gateway:
+    container_name: "apigateway-container"
     build:
       context: .
       dockerfile: Source/ApiGateway/ApiGatewayApp/Dockerfile
+    networks:
+      - docker_web_network
     ports:
       - 5000:80
 
   cart-service:
+    container_name: "cartservice-container"
     build:
       context: .
       dockerfile: Source/Services/Cart/Cart.API/Dockerfile
     ports:
       - 5001:80
+    networks:
+      - docker_web_network
     depends_on:
       - redis-server
+
+networks:
+  docker_web_network:
